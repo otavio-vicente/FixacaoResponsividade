@@ -1,0 +1,21 @@
+main {
+    display: flex;
+}
+
+main nav {
+    width: 20%;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #4d5e6d;
+    color: #ffffff;
+    position: fixed;
+    top: 11vh;
+}
+
+main article {
+    width: 80%;
+    padding-left: 30rem;
+    padding-right: 2rem;
+    padding-top: 7rem;
+}
