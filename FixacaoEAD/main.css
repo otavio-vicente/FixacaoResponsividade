@@ -1,8 +1,11 @@
 main {
     display: flex;
+    padding-bottom: 4.5rem;
 }
 
 main nav {
+    display: flex;
+    flex-direction: column;
     width: 20%;
     height: 100%;
     padding-left: 2rem;
@@ -10,12 +13,46 @@ main nav {
     background-color: #4d5e6d;
     color: #ffffff;
     position: fixed;
-    top: 11vh;
+    top: 10.9vh;
 }
 
 main article {
-    width: 80%;
-    padding-left: 30rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20rem;
     padding-right: 2rem;
     padding-top: 7rem;
+}
+
+/* Fim estrutura base */
+
+/* Inicio sectionularios */
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: #4d5e6d solid 2px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section input, div, textarea, select {
+    margin-bottom: 1rem;
+}
+
+section textarea, select {
+    border: solid 2px #cecece;
+    border-radius: 10px;
+}
+
+section input, select {
+    border: solid #cecece 2px;
+    border-radius: 10px;
+    padding: 5px;
 }
