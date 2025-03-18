@@ -22,13 +22,22 @@
     <main>
         <aside>
             <nav>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis vel vero aliquid iure hic unde non exercitationem aperiam sequi beatae error accusamus eum et nobis natus eveniet, iusto animi repellat.</p>
+               <ul>
+                <li><a href=""><img src="./imgs/134216_menu_lines_hamburger_icon.png" alt=""></a></li>
+                <li><a href="" class="itens">Informações Pessoais</a></li>
+                <li><a href="" class="itens">Contato</a></li>
+                <li><a href="" class="itens">Credenciais de Acesso</a></li>
+                <li><a href="" class="itens">Informações Profissionais</a></li>
+                <li><a href="">Preferências e Redes Sociais</a></li>
+                <li><a href="" class="itens">Pagamento e Dados Bancarios</a></li>
+                <li><a href="" class="itens">Outros Recursos</a></li>
+               </ul>
             </nav>
         </aside>
         <article>
             <form action="" method="post">
                 <section>
-                    <h2>Insectionações Pessoais</h2>
+                    <h2>Informações Pessoais</h2>
                     <label for="nome">Nome:</label>
                     <input type="text" name="nome" id="nome">
                     <label for="dataNasc">Data de Nascimento:</label>
@@ -51,7 +60,6 @@
                     <input type="image" name="fotoPerfil" id="fotoPerfil" alt="Enviar Foto" >
                     <label for="assinatura">Assinatura Digital:</label>
                     <input type="image" name="assinatura" id="assinatura" alt="Enviar Foto">
-                    <input type="submit">
                 </section>
 
                 <section>
@@ -111,24 +119,116 @@
                     <label for="dataAdmissao">Data de Admissão:</label>
                     <input type="date" name="dataAdmissao" id="dataAdmissao">    
                 </section>
-                
+
                 <section>
                     <h2>Preferências e Redes Sociais</h2>
-                    <label for="generoMusical">Gênero Musical Favorito:</label>
-                    <input type="text" name="generoMusical" id="generoMusical">
-                    <label for="empresa">Empresa:</label>
-                    <input type="text" name="empresa" id="empresa">
-                    <label for="cnpj">CNPJ da Empresa:</label>
-                    <input type="number" name="cnpj" id="cnpj">
-                    <label for="cargo">Cargo:</label>
-                    <input type="text" name="cargo" id="cargo">
-                    <label for="salario">Salário Aproximado:</label>
-                    <input type="number" name="salario" id="salario">
-                    <label for="dataAdmissao">Data de Admissão:</label>
-                    <input type="date" name="dataAdmissao" id="dataAdmissao">    
+                
+                    <label for="genero-musical">Gênero Musical Favorito:</label>
+                    <input type="text" id="genero-musical" name="genero-musical">
+                
+                    <label>Hobbies:</label>
+                    <div class="checks-laterais">
+                        <input type="checkbox" id="futebol" name="hobbies" value="Futebol">
+                    <label for="futebol">Futebol</label>
+                    <input type="checkbox" id="leitura" name="hobbies" value="Leitura">
+                        <label for="leitura">Leitura</label>
+                        <input type="checkbox" id="viagens" name="hobbies" value="Viagens">
+                        <label for="viagens">Viagens</label>
+                        <input type="checkbox" id="musica" name="hobbies" value="Música">
+                        <label for="musica">Música</label>
+                    </div>
+
+                    <label for="facebook">Facebook (Link):</label>
+                    <input type="text" id="facebook" name="facebook">
+                
+                    <label for="instagram">Instagram (Link):</label>
+                    <input type="text" id="instagram" name="instagram">
+                
+                    <label for="linkedin">LinkedIn (Link):</label>
+                    <input type="text" id="linkedin" name="linkedin">
+                
+                    <label>Notificações via E-mail:</label>
+                    <div class="checks-laterais">
+                        <input type="radio" id="notificacao-sim" name="notificacoes" value="Sim">
+                        <label for="notificacao-sim">Sim</label>
+                    
+                        <input type="radio" id="notificacao-nao" name="notificacoes" value="Não">
+                        <label for="notificacao-nao">Não</label>
+                    </div>
+                    
+                </section>
+                
+                <section>
+                    <h2>Pagamento e Dados Bancários</h2>
+                
+                    <label for="numero-cartao">Número do Cartão de Crédito:</label>
+                    <input type="text" id="numero-cartao" name="numero-cartao" placeholder="XXXX XXXX XXXX XXXX">
+                
+                    <label for="vencimento-cartao">Data de Vencimento:</label>
+                    <select id="vencimento-cartao" name="vencimento-cartao">
+                        <option value="">Selecione o mês</option>
+                        <option value="01">Janeiro</option>
+                        <option value="02">Fevereiro</option>
+                        <option value="03">Março</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Maio</option>
+                        <option value="06">Junho</option>
+                        <option value="07">Julho</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                
+                    <label for="cvv">Código de Segurança (CVV):</label>
+                    <input type="number" id="cvv" name="cvv" min="100" max="999">
+                
+                    <label for="banco">Banco:</label>
+                    <select id="banco" name="banco">
+                        <option value="banco-brasil">Banco do Brasil</option>
+                        <option value="caixa">Caixa</option>
+                        <option value="bradesco">Bradesco</option>
+                    </select>
+                
+                    <label for="agencia">Agência:</label>
+                    <input type="text" id="agencia" name="agencia">
+                
+                    <label for="conta-corrente">Conta Corrente:</label>
+                    <input type="text" id="conta-corrente" name="conta-corrente">
+                
+                    <label for="tipo-conta">Tipo de Conta:</label>
+                    <select id="tipo-conta" name="tipo-conta">
+                        <option value="poupanca">Poupança</option>
+                        <option value="corrente">Corrente</option>
+                    </select>
+                </section>
+                
+                <section>
+                    <h2>Outros Recursos</h2>
+                
+                    <label for="documento">Upload de Documento (PDF):</label>
+                    <input type="file" id="documento" name="documento" accept=".pdf">
+                
+                    <label for="termos">Aceitar Termos:</label>
+                    <input type="range" id="termos" name="termos" min="0" max="1" value="0">
+                
+                    <label for="horario-contato">Horário de Preferência para Contato:</label>
+                    <input type="time" id="horario-contato" name="horario-contato">
+                
+                    <label for="dependentes">Número de Dependentes:</label>
+                    <input type="number" id="dependentes" name="dependentes" min="0">
+                
+                    <label for="cor-favorita">Cor Favorita:</label>
+                    <input type="color" id="cor-favorita" name="cor-favorita">
+                
+                    <label for="comentarios">Comentários ou Observações:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
                 </section>
 
-                <input type="submit">
+                <input class="btn-form" type="submit">
+
+                
             </form>
         </article>
 <!-- 

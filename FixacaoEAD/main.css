@@ -13,14 +13,32 @@ main nav {
     background-color: #4d5e6d;
     color: #ffffff;
     position: fixed;
-    top: 10.9vh;
+    z-index: 1000;
+    padding-top: 7rem;
 }
+
+nav li {
+    list-style: none;
+    margin: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem;
+}
+nav .itens:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 3rem;
+}
+
 
 main article {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 20rem;
+    padding-left: 42rem;
     padding-right: 2rem;
     padding-top: 7rem;
 }
@@ -29,6 +47,7 @@ main article {
 
 /* Inicio sectionularios */
 section {
+    width:120%;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -55,4 +74,37 @@ section input, select {
     border: solid #cecece 2px;
     border-radius: 10px;
     padding: 5px;
+    font-size: 1rem;
 }
+
+section {
+    font-size: 1.2rem;
+}
+
+.btn-form {
+    width:120%;
+    padding: 10px;
+    border: #4d5e6d solid 2px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.btn-form:hover {
+    background-color: rgb(170, 255, 170);
+}
+
+.checks-laterais label {
+    margin-right: 1%;
+}
+
+/* @media (max-width: 1000px) {
+    main {
+        flex-direction: row;
+    }
+    nav {
+        max-height: 20px;
+    }
+
+    article {
+        width: ;
+    };
+} */

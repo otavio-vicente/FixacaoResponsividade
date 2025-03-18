@@ -6,4 +6,5 @@ footer {
     color: #ffffff;
     padding: 1rem;
     bottom: 0;
+    z-index: 1001;
 }
