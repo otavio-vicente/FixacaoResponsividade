@@ -103,15 +103,25 @@ section {
     font-size: 1rem;
 }
 
-.btn-form {
+.btn-form-submit {
     width:120%;
     padding: 10px;
     border: #4d5e6d solid 2px;
     border-radius: 10px;
     font-size: 1rem;
+    background-color: rgb(26, 133, 52);
+    color: #ffffff;
 }
-.btn-form:hover {
-    background-color: rgb(170, 255, 170);
+.btn-form-reset {
+    width:120%;
+    padding: 10px;
+    border: #4d5e6d solid 2px;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.btn-form-submit:hover {
+    background-color: rgb(49, 187, 49);
 }
 
 .checks-laterais label {
