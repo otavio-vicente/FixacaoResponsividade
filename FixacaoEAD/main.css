@@ -8,29 +8,50 @@ main nav {
     flex-direction: column;
     width: 20%;
     height: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
     background-color: #4d5e6d;
     color: #ffffff;
     position: fixed;
     z-index: 1000;
-    padding-top: 7rem;
+    padding-top: 5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 nav li {
     list-style: none;
-    margin: 1rem;
+    margin: 0.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+a #user {
+    width: 80%;
+    height: 80%;
 }
 
 nav a {
     text-decoration: none;
     color: #ffffff;
+    width: 2rem;
     padding: 0.5rem;
+    justify-content: center;
 }
+
 nav .itens:hover {
     background-color: #ffffff;
     color: #000000;
     border-radius: 3rem;
+}
+
+ul img {
+    height: 2rem;
 }
 
 
@@ -38,7 +59,7 @@ main article {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 42rem;
+    padding-left: 28rem;
     padding-right: 2rem;
     padding-top: 7rem;
 }
@@ -54,6 +75,7 @@ section {
     border: #4d5e6d solid 2px;
     border-radius: 10px;
     margin-bottom: 2rem;
+    box-shadow: 10px 5px 5px rgb(207, 207, 207);
 }
 
 section h2 {
@@ -78,7 +100,7 @@ section input, select {
 }
 
 section {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .btn-form {
@@ -96,15 +118,59 @@ section {
     margin-right: 1%;
 }
 
-/* @media (max-width: 1000px) {
-    main {
-        flex-direction: row;
+@media (min-width: 2580px) {
+    main article {
+        padding-left: 60rem;
+        width: 78%;
     }
-    nav {
-        max-height: 20px;
+} 
+@media (max-width: 1116px) {
+    main article {
+        padding-left: 20rem;
+        width: 80%;
     }
 
-    article {
-        width: ;
-    };
-} */
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+} 
+@media (max-width: 2580px) {
+    main article {
+        padding-left: 40rem;
+        padding-right: 0rem;
+        width: 80%;
+    }
+} 
+@media (max-width: 1440px) {
+    main article {
+        padding-left: 22rem;
+        padding-right: 0rem;
+        width: 80%;
+    }
+} 
+@media (max-width: 768px) {
+    main article {
+        padding-left: 15rem;
+        padding-right: 0rem;
+        width: 80%;
+        font-size: medium;
+    }
+    section, nav {
+        font-size: 0.8rem;
+    }
+    section input, select {
+        font-size: 0.6rem;
+    }
+    nav img {
+        width: 2rem;
+    }
+    
+}
+
+@media (max-width: 320px){
+    main nav{
+        padding-right: 1rem;
+    }
+    
+}

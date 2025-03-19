@@ -22,21 +22,22 @@
     <main>
         <aside>
             <nav>
-               <ul>
-                <li><a href=""><img src="./imgs/134216_menu_lines_hamburger_icon.png" alt=""></a></li>
-                <li><a href="" class="itens">Informações Pessoais</a></li>
-                <li><a href="" class="itens">Contato</a></li>
-                <li><a href="" class="itens">Credenciais de Acesso</a></li>
-                <li><a href="" class="itens">Informações Profissionais</a></li>
-                <li><a href="">Preferências e Redes Sociais</a></li>
-                <li><a href="" class="itens">Pagamento e Dados Bancarios</a></li>
-                <li><a href="" class="itens">Outros Recursos</a></li>
-               </ul>
+                <ul>
+                    <li><a href="#"><img src="./imgs/134216_menu_lines_hamburger_icon.png" alt=""></a></li>
+                    <li><a href="#sectionInfoPessoais" class="itens">🙋‍♂️ Pessoal</a></li>
+                    <li><a href="#sectionContato" class="itens">📞 Contato</a></li>
+                    <li><a href="#sectionCredenciais" class="itens">🔑 Acesso</a></li>
+                    <li><a href="#sectionInfoPro" class="itens">🧑‍💼 Profissional</a></li>
+                    <li><a href="#sectionPreferencias" class="itens">🛜 Preferências</a></li>
+                    <li><a href="#sectionPagamento" class="itens">💰 Pagamento</a></li>
+                    <li><a href="#sectionOutros" class="itens">🪄 Outros</a></li>
+                    <li><a href=""><img id="user" src="./imgs/1564535_customer_user_userphoto_account_person_icon.png" alt=""></a></li>
+                </ul>
             </nav>
         </aside>
         <article>
             <form action="" method="post">
-                <section>
+                <section id="sectionInfoPessoais">
                     <h2>Informações Pessoais</h2>
                     <label for="nome">Nome:</label>
                     <input type="text" name="nome" id="nome">
@@ -62,7 +63,7 @@
                     <input type="image" name="assinatura" id="assinatura" alt="Enviar Foto">
                 </section>
 
-                <section>
+                <section id="sectionContato">
                     <h2>Contato</h2>
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email">
@@ -83,7 +84,7 @@
                     </select>
                 </section>
                 
-                <section>
+                <section id="sectionCredenciais">
                     <h2>Credenciais de Acesso</h2>
                     <label for="nomeUser">Nome de Usuário:</label>
                     <input type="text" name="nomeUser" id="nomeUser">
@@ -104,7 +105,7 @@
                     <div><input type="checkbox" name="termos" id="termos"> Eu aceito todos os termos de uso.</div>     
                 </section>
                 
-                <section>
+                <section id="sectionInfoPro">
                     <h2>Informações Profissionais</h2>
                     <label for="ocupacao">Ocupação:</label>
                     <input type="text" name="ocupacao" id="ocupacao">
@@ -120,7 +121,7 @@
                     <input type="date" name="dataAdmissao" id="dataAdmissao">    
                 </section>
 
-                <section>
+                <section id="sectionPreferencias">
                     <h2>Preferências e Redes Sociais</h2>
                 
                     <label for="genero-musical">Gênero Musical Favorito:</label>
@@ -158,7 +159,7 @@
                     
                 </section>
                 
-                <section>
+                <section id="sectionPagamento">
                     <h2>Pagamento e Dados Bancários</h2>
                 
                     <label for="numero-cartao">Número do Cartão de Crédito:</label>
@@ -204,7 +205,7 @@
                     </select>
                 </section>
                 
-                <section>
+                <section id="sectionOutros">
                     <h2>Outros Recursos</h2>
                 
                     <label for="documento">Upload de Documento (PDF):</label>
