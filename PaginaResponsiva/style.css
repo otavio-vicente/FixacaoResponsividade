@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER FIXO */
+.header {
+    background-color: #192a38;
+    color: white;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 20px; 
+}
+
+/* BOTÃO MENU */
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 1rem;
+    display: none;
+}
+
+/* LAYOUT PRINCIPAL */
+.wrapper {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    margin-top: 60px; /* Para não sobrepor o header */
+}
+
+/* SIDEBAR */
+.sidebar {
+    background-color: #4d5e6d;
+    color: white;
+    width: 250px;
+    height: calc(100vh - 60px);
+    position: fixed;
+    left: 0;
+    padding: 10px;
+    display: block;
+    
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    display: flex;
+    width: 100%;
+    display: flex;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+}
+.sidebar .icons {
+    width: 2rem;
+    margin-right: 3%;
+}
+
+.sidebar #user {
+    width: 60%;
+}
+
+#userFlex a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .itens:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 3rem;
+}
+
+/* ÁREA PRINCIPAL */
+main {
+    margin-left: 17rem;
+    padding: 1rem;
+    flex: 1;
+    min-height: calc(100vh - 120px); /* Garante espaço para o conteúdo e footer */
+}
+
+/* FOOTER FIXO */
+.footer {
+    background-color: #192a38;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+    .sidebar #user {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar { /* Nosso Menu com os itens */
+        display: none;
+        width: 100%;
+        position: absolute;
+        height: auto;
+    }
+
+    main { /* Nosso conteúdo principal*/
+        margin-left: 0;
+    }
+
+    .menu-toggle { /* Nosso menu hamburger */
+        display: block;
+    }
+
+    .sidebar.show { /* Essa é uma classe que setamos para quando clicar sobre o mesmo mostre o menu com os itens, usado no JS */
+        display: block;
+        top: 60px;
+        width: 250px;
+        height: calc(100vh - 60px);
+    }
+}
+
+section {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: #4d5e6d solid 2px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 10px 5px 5px rgb(207, 207, 207);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section input, div, textarea, select {
+    margin-bottom: 1rem;
+}
+
+section textarea, select {
+    border: solid 2px #cecece;
+    border-radius: 10px;
+}
+
+section input, select {
+    border: solid #cecece 2px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+section {
+    font-size: 1rem;
+}
+
+.btn-form-submit {
+    width:100%;
+    padding: 10px;
+    border: #4d5e6d solid 2px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: rgb(26, 133, 52);
+    color: #ffffff;
+    font-weight: bold;
+}
+.btn-form-submit:hover {
+    background-color: rgb(49, 187, 49);
+}
+
+.btn-form-reset {
+    width:100%;
+    padding: 10px;
+    border: #4d5e6d solid 2px;
+    background-color: #ffa51e;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+.btn-form-reset:hover {
+    background-color: #ffb84e;
+}
+
+.checks-laterais label {
+    margin-right: 1%;
+}
