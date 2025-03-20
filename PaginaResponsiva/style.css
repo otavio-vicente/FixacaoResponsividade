@@ -101,6 +101,7 @@ nav .itens:hover {
     background-color: #ffffff;
     color: #000000;
     border-radius: 3rem;
+    transition: 0.3s;
 }
 
 /* ÁREA PRINCIPAL */
@@ -162,6 +163,7 @@ section {
     border-radius: 10px;
     margin-bottom: 2rem;
     box-shadow: 10px 5px 5px rgb(207, 207, 207);
+    margin-top: 2rem;
 }
 
 section h2 {
@@ -198,8 +200,10 @@ section {
     background-color: rgb(26, 133, 52);
     color: #ffffff;
     font-weight: bold;
+    margin-bottom: 3rem;
 }
 .btn-form-submit:hover {
+    transition: 0.3s;
     background-color: rgb(49, 187, 49);
 }
 
@@ -207,7 +211,7 @@ section {
     width:100%;
     padding: 10px;
     border: #4d5e6d solid 2px;
-    background-color: #ffa51e;
+    background-color: #ff9900;
     border-radius: 10px;
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -215,7 +219,8 @@ section {
     font-weight: bold;
 }
 .btn-form-reset:hover {
-    background-color: #ffb84e;
+    transition: 0.3s;   
+    background-color: #ffb342;
 }
 
 .checks-laterais label {
